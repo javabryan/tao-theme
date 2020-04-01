@@ -19,7 +19,7 @@ get_header();
     <?php 
         get_template_part( 'template-parts/front-page', 'events' );
     ?>
-</section><div></div>
+</section><div></div><a></a>
 </main>
 </div>
 
