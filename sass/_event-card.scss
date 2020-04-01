@@ -1,0 +1,101 @@
+.upcoming-events-section {
+    h2 {
+        text-align: center;
+        border-bottom: 1px solid $gray-500;
+        padding: 2rem 0 1rem 0;
+    }
+
+    .upcoming-events {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .event-card {
+        display: flex;
+        flex-grow: 1;
+        flex-shrink: 0;
+        padding: 1rem;
+        
+        .event-card-inner {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            background-color: #fff;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+            .card-img {
+                display: flex;
+                justify-content: center;
+                align-content: flex-end;
+                align-items: flex-end;
+                position: relative;
+                width: 100%;
+                height: 180px;
+                background-size: cover;
+                border-radius: 0;
+                z-index:0;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(0, 0, 0, 0.18);
+                    z-index:2;
+                }
+            }
+
+            h3 {
+                color: #fff;
+                z-index: 5;
+                background: rgba(0, 0, 0, 0.72);
+                width: 100%;
+                text-align: center;
+                font-size: 1.3rem;
+                padding: 0.6rem 0 0.65rem 0;
+                margin: 0;
+            }
+
+            h4 {
+                position: relative;
+                margin: 0.25rem auto;
+                padding-bottom:0.9rem;
+                margin-top: 1rem;
+
+                &:after {
+                    content: '';
+                    position:absolute;
+                    bottom:0;
+                    left: 50%;
+                    transform: translate(-50%);
+                    width: 50%;
+                    height: 1px;
+                    background-color: $gray-300;
+                }
+            }
+
+            p {
+                height: 130px;
+                padding: 0.5rem 1rem 1.8rem 1rem;
+                color: $gray-600;
+            }
+
+            .sign-up {
+                padding: 1rem;
+                margin: 1.5rem 2rem;
+                font-size: 1rem;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+                border: none;
+                background-image: linear-gradient(to right top, #0049b3, #0c4aad, #164aa6, #1d4ba0, #234b99);
+                color: #fff;
+                text-align: center;
+
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

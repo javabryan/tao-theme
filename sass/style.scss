@@ -1,0 +1,54 @@
+/*!
+Theme Name: tao
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: MIT
+License URI: LICENSE
+Text Domain: tao
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+@import "~bootstrap/scss/functions";
+@import "variables";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/alert";
+
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+@import "normalize";
+@import "typography/typography";
+@import "elements/elements";
+@import "forms/forms";
+@import "navigation/navigation";
+@import "modules/accessibility";
+@import "modules/alignments";
+@import "modules/clearings";
+@import "site/secondary/widgets";
+@import "site/site";
+@import "modules/infinite-scroll";
+@import "media/media";
+
+@import "utilities";
+@import "fonts";
+@import "header";
+@import "variables";
+@import "front-page";
+@import "event-card";

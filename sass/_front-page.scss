@@ -1,0 +1,35 @@
+html,
+body {
+    background-image: rgba(254, 254, 254, 0.92);
+}
+
+.tao-front-section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tao-hero {
+    position: relative;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 1;
+    }
+}
+
+.tao-description {
+    font-size: 4rem;
+    padding: 10rem 0;
+    color: #fff;
+    z-index:2;
+}

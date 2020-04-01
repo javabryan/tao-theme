@@ -1,0 +1,30 @@
+{
+  "name": "tao",
+  "version": "1.0.0",
+  "description": "Theme for Tao of Odin Site",
+  "main": "style.css",
+  "scripts": {
+    "start": "rollup -c -w"
+  },
+  "author": "Arthian",
+  "license": "MIT",
+  "browserslist": [
+    "last 2 major versions",
+    "ie 11"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "rollup": "^1.21.4",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-terser": "^5.1.2"
+  }
+}
