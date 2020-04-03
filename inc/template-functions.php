@@ -119,3 +119,46 @@ function tao_get_category_color( $term_id ) {
 
 	return $result;
 }
+
+function tao_get_featured_image() {
+    //Execute if singular
+    if ( is_singular( 'tribe_events' ) ) {
+
+        $id = get_queried_object_id ();
+
+        // Check if the post/page has featured image
+        if ( has_post_thumbnail( $id ) ) {
+
+            // Change thumbnail size, but I guess full is what you'll need
+            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $id ), 'full' );
+
+            $url = $image[0];
+
+        } else {
+
+            //Set a default image if Featured Image isn't set
+            $url = '';
+
+        }
+    }
+
+    return $url;
+}
+
+/**
+ * Return formatted event date
+ */
+function tao_formatted_date($event_date) {
+    $hour = date('h:ia', strtotime($event_date));
+
+    $firstChar = substr($hour, 0, 1);
+    if(!is_int($firstChar)) {
+        $hour = substr($hour, 1);
+	}
+	
+	$pre_date = date('l m/d', strtotime($event_date));
+    $hour = date('h:ia', strtotime($event_date));
+	$full_date = '<div class="full-date">' . '<p>' . $pre_date . '<p>' . '<small>' . $hour . '</small>';
+
+	return $full_date;
+}

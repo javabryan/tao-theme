@@ -1,8 +1,3 @@
-html,
-body {
-    background-image: rgba(254, 254, 254, 0.92);
-}
-
 .tao-front-section {
     display: flex;
     align-items: center;
@@ -17,19 +12,41 @@ body {
     background-repeat: no-repeat;
     z-index: 1;
 
+    .discord-button {
+        width: 100%;
+        text-align: center;
+
+        a {
+            display: block;
+            font-size:1rem;
+            padding: 0.75rem 5rem;
+            margin: 0.5rem;
+            background-color: rgb(57, 26, 141);
+            transition: all ease-in-out 100ms;
+            color: rgb(252, 252, 252);
+        }
+    
+        a:hover,
+        a:focus {
+            background-color: rgb(89, 82, 185);
+            text-decoration: none;
+        }
+
+    }
+
     &:after {
         content: '';
         position: absolute;
         height: 100%;
         width: 100%;
-        background: rgba(0, 0, 0, 0.75);
+        background: $overlay-after;
         z-index: 1;
     }
 }
 
 .tao-description {
     font-size: 4rem;
-    padding: 10rem 0;
+    padding: 10rem 0 11rem 0;
     color: #fff;
     z-index:2;
 }

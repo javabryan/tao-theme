@@ -1,1 +1,16 @@
 $primary: rgb(165, 26, 26);
+$carbon :
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+$carbon-bg-color: #131313;
+$carbon-bg-size: 20px 20px;
+
+$button-image: linear-gradient(to right top, #0049b3, #0c4aad, #164aa6, #1d4ba0, #234b99);
+$button-gradient: linear-gradient(45deg, #fff2ce, #ffb1b1);
+$overlay-after: rgba(0, 0, 0, 0.79);
+$off-text-color: rgb(223, 223, 223);
+$dark-bg: linear-gradient(to right bottom,#181818,#161717,#141516,#121415,#0f1314);

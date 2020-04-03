@@ -1,3 +1,8 @@
+html,
+body {
+    overflow-x: hidden !important;
+}
+
 .parallax {  
     height: 100% !important; 
     background-attachment: fixed !important;
@@ -8,9 +13,19 @@
     margin-right:-410px !important;
     }
      
-    .parallax-content { 
+.parallax-content { 
     width:100% !important;
     margin:0 auto !important;
     color:#FFF !important;
     padding-top:50px !important; 
-    } 
+} 
+
+.navbar .site-title {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #fffcbe, #ffb1b1);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+  }

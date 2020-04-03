@@ -13,14 +13,10 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
+			$event_form = do_shortcode(get_field('insert_shortcode'));
 			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+			get_template_part( 'template-parts/events', 'single' );
 
 		endwhile; // End of the loop.
 		?>

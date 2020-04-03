@@ -1,0 +1,79 @@
+/*
+
+This entire file is basically just editing an already existing style,
+which is messy. It basically hides some elements and restyles others
+on the events page. Not best practice and I probably need to build an
+entire events page using the plugin hooks for The Events Calendar, but
+it works for now.
+
+*/
+.single {
+    .tribe-events-single-event-title,
+    .tribe-event-date-start,
+    .tribe-events-event-image,
+    .tribe-events-single-event-description,
+    .tribe-events-content,
+    .tribe-events-schedule,
+    .tribe-events-cal-links
+    {
+        display: none !important;
+    }
+
+    .tribe-events-back,
+    .tribe-events-nav-previous,
+    .tribe-events-nav-next {
+        text-align: left;
+        width: 130px !important;
+        margin-top: 1rem;
+        font-size: 0.8rem !important;
+        padding: 0.15rem 0;
+
+        a {
+            display: flex;
+            justify-content: space-evenly !important;
+            align-items: center;
+            border-radius: 0.15rem !important;
+            padding: 0.5rem;
+            height: auto;
+            width: auto;
+            color: #f7f7f7;
+            background: #333;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.5s;
+
+            span {
+                padding: 0.5rem;
+            }
+        }
+
+        a:hover,
+        a:focus {
+            background: #c4c4c4 !important;
+            color: $gray-700;
+        }
+    }
+
+    .tribe-events-nav-pagination {
+        background: none !important;
+        background-color: none !important;
+        background-image: none !important;
+    }
+
+    #tribe-events-footer {
+        border-top: none !important;
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    .tribe-events-sub-nav {
+        padding: 0 3rem 2rem 3rem !important;
+    }
+
+    .tribe-events-single-section {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .tribe-events-single-section-title {
+        width: 100%;
+    }
+}

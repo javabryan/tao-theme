@@ -29,19 +29,3 @@ nav {
 .tao-global-menu {
     justify-content: flex-end;
 }
-
-.menu-item-object-custom.menu-item-6 {
-    a {
-        font-size:0.9rem;
-        padding: 0.5rem;
-        background-color: rgb(57, 26, 141);
-        border-radius: 1rem;
-        margin: 0 1rem;
-        transition: all ease-in-out 100ms;
-    }
-
-    a:hover,
-    a:focus {
-        background-color: rgb(89, 82, 185);
-    }
-}
