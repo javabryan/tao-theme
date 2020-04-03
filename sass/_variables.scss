@@ -9,8 +9,13 @@ linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transpar
 $carbon-bg-color: #131313;
 $carbon-bg-size: 20px 20px;
 
-$button-image: linear-gradient(to right top, #0049b3, #0c4aad, #164aa6, #1d4ba0, #234b99);
+$button-bg: linear-gradient(to right top, #0049b3, #0c4aad, #164aa6, #1d4ba0, #234b99);
+$button-hover: linear-gradient(to right top, #0c54c0, #1454bb, #265ab3, #2958b1, #3f5fa0);
 $button-gradient: linear-gradient(45deg, #fff2ce, #ffb1b1);
 $overlay-after: rgba(0, 0, 0, 0.79);
 $off-text-color: rgb(223, 223, 223);
 $dark-bg: linear-gradient(to right bottom,#181818,#161717,#141516,#121415,#0f1314);
+$link-visited: purple;
+$link: #4169e1;
+$link-hover: rgb(90, 0, 90);
+$link-active: rgb(218, 0, 218);

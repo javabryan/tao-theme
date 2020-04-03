@@ -1,22 +1,11 @@
-/*
-
-This entire file is basically just editing an already existing style,
-which is messy. It basically hides some elements and restyles others
-on the events page. Not best practice and I probably need to build an
-entire events page using the plugin hooks for The Events Calendar, but
-it works for now.
-
-*/
 .single {
-    .tribe-events-single-event-title,
-    .tribe-event-date-start,
-    .tribe-events-event-image,
-    .tribe-events-single-event-description,
-    .tribe-events-content,
-    .tribe-events-schedule,
-    .tribe-events-cal-links
-    {
-        display: none !important;
+    .tribe-events-single {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .entry-content {
+        margin-top: 0;
     }
 
     .tribe-events-back,
@@ -37,7 +26,7 @@ it works for now.
             height: auto;
             width: auto;
             color: #f7f7f7;
-            background: #333;
+            background: $button-bg;
             box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
             transition: all 0.5s;
 
@@ -48,9 +37,17 @@ it works for now.
 
         a:hover,
         a:focus {
-            background: #c4c4c4 !important;
-            color: $gray-700;
+            background: $button-hover;
+            color: #fff;
         }
+    }
+
+    .tribe-events-button {
+        background: $button-bg !important;
+    }
+
+    .tribe-events-back {
+        margin-top: 0;
     }
 
     .tribe-events-nav-pagination {
@@ -59,21 +56,61 @@ it works for now.
         background-image: none !important;
     }
 
+    .tribe-events-nav-previous,
+    .tribe-events-nav-next {
+        text-align: left;
+        width: auto !important;
+        border-left: 1px solid #333;
+
+        a {
+            background: transparent;
+            box-shadow: none;
+            color: blue;
+            text-align: left;
+        }
+
+        a:hover,
+        a:focus {
+            background: transparent;
+            color: $link-hover !important;
+        }
+
+        a:active {
+            color: $link-active !important;
+        }
+
+        a:visited {
+            color: $link-visited !important;
+        }
+    }
+
+    .tribe-events-nav-next {
+        text-align: right;
+        border-right: 1px solid #333;
+        border-left: none;
+    }
+
     #tribe-events-footer {
         border-top: none !important;
         padding: 0 !important;
         margin: 0;
     }
 
-    .tribe-events-sub-nav {
-        padding: 0 3rem 2rem 3rem !important;
-    }
-
     .tribe-events-single-section {
-        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background: transparent !important;
     }
 
     .tribe-events-single-section-title {
         width: 100%;
+    }
+
+    .tribe-events-notices {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+
+    .nf-form-cont {
+        box-shadow: none;
+        background: transparent;
     }
 }

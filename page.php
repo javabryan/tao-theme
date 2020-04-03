@@ -16,7 +16,7 @@ get_header();
 			$event_form = do_shortcode(get_field('insert_shortcode'));
 			the_post();
 
-			get_template_part( 'template-parts/events', 'single' );
+			get_template_part( 'template-parts/content', 'page' );
 
 		endwhile; // End of the loop.
 		?>
