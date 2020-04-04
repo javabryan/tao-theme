@@ -1,0 +1,36 @@
+.footer-site-info {
+    background-image: $dark-bg;
+}
+
+.tao-footer-about,
+.tao-footer-menu {
+    background-image: none;
+    padding: 2rem 0 4rem 0;
+
+    p {
+        color: $gray-300;
+    }
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+}
+
+.tao-footer-menu {
+    text-align: right;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        width: 100%;
+        padding-top: 0;
+
+        .menu-item {
+            border-bottom: 1px solid rgb(56, 56, 56);
+        }
+    }
+
+    .navbar-nav {
+        margin:0;
+    }
+}

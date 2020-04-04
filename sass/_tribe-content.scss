@@ -44,6 +44,11 @@
 
     .tribe-events-button {
         background: $button-bg !important;
+
+        &:hover,
+        &:focus {
+            background: $button-hover !important;
+        }
     }
 
     .tribe-events-back {
@@ -112,5 +117,47 @@
     .nf-form-cont {
         box-shadow: none;
         background: transparent;
+    }
+}
+
+.post-type-archive {
+    .tribe-common-c-btn {
+        background: $button-bg !important;
+
+        &:hover,
+        &:focus {
+            background: $button-hover !important;
+        }
+    }
+}
+
+.tribe-events-c-top-bar__nav,
+.tribe-events-c-nav,
+.tribe-events-c-nav__prev,
+.tribe-events-c-nav__next {
+    background: transparent;
+    font-size: 1.2rem !important;
+}
+
+.tribe-events-c-nav__prev,
+.tribe-events-c-nav__next {
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+
+.tribe-events-calendar-list__event {
+    padding: 1rem !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.datepicker-days {
+    td.active {
+        background: $button-bg !important;
+
+        &:hover,
+        &:focus {
+            background: $button-hover !important;
+        }
     }
 }

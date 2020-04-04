@@ -20,7 +20,11 @@ body {
     padding-top:50px !important; 
 } 
 
-.navbar .site-title {
+.navbar .site-title,
+footer h1,
+footer h2,
+footer h3,
+footer h4 {
     background-color: #f3ec78;
     background-image: linear-gradient(45deg, #fffcbe, #ffb1b1);
     background-size: 100%;
@@ -28,4 +32,25 @@ body {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
-  }
+}
+
+.nav-link {
+    background-color: #ffffff;
+    background-image: linear-gradient(45deg, #ffffff, #ffddb1);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.site-title a:hover,
+.nav-link:hover {
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #ffcf90, #ff4343);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}

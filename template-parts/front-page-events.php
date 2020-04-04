@@ -23,11 +23,10 @@ foreach ( $events as $post ) :
 ?>
             <div class="col-12 col-lg-4 col-md-6 d-flex event-card align-items-stretch">
                 <div class="event-card-inner d-flex align-items-stretch">
-                    <a href="<?php echo $post->guid; ?>">
-                        <div aria-hidden="true" class="card-img" style='background:url("<?php echo get_the_post_thumbnail_url() ?>")'>
-                            <h3><?php echo $post->post_title ?></h3>
-                        </div>
+                    <a class="img-container" href="<?php echo $post->guid; ?>">
+                        <div aria-hidden="true" class="card-img" style='background:url("<?php echo get_the_post_thumbnail_url() ?>")'></div>
                     </a>
+                    <h3><?php echo $post->post_title ?></h3>
                     <h4><?php echo date('l m/d', strtotime($date));?> <small><?php echo $hour ?></small></h4>
                     <p><?php echo $post->post_excerpt ?></p>
                     <a class="sign-up" href="<?php echo $post->guid; ?>">Sign Up</a>

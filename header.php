@@ -27,7 +27,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tao' ); ?></a>
 
 	<header id="masthead" class="site-header">
-			<nav class="navbar navbar-expand-md">
+			<nav class="navbar navbar-dark navbar-expand-md">
 					<div class="site-branding">
 					<?php
 					the_custom_logo();

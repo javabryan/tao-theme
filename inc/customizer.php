@@ -40,6 +40,36 @@ function tao_customize_register( $wp_customize ) {
 			'settings'          => 'hero',    
 		)));
 	}
+
+	$wp_customize->add_section('theme_options', array(
+			'title' => __('Tao Options', 'tao'),
+			'priority' => 130, //before CSS
+		)
+	);
+
+	$wp_customize->add_setting( 'tao_footer_description', array(
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'default' => 'This site is the footer site description',
+			'transport' => 'refresh',
+			'sanitize_callback' => 'wp_filter_nohtml_kses',
+			'sanitize_js_callback' => 'wp_filter_nohtml_kses',
+		) 
+	);
+
+	$wp_customize->add_control( 'tao_footer_description', array(
+			'label' => __('Footer description'),
+			'description' => esc_html__('Enter a site description for the footer'),
+			'section' => 'theme_options',
+			'priority' => 10,
+			'type' => 'text',
+			'capability' => 'edit_theme_options',
+			'input_attrs'=> array(
+				'class' => '.site-footer-description',
+				'placeholder' => 'This is where you type stuff',
+			),
+		) 
+	);
 }
 add_action( 'customize_register', 'tao_customize_register' );
 
