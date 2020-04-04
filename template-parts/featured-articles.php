@@ -1,8 +1,8 @@
 <?php
  $featuredPosts = tao_get_featured_posts(5);
 ?>
-<div class="container">
 
+    <h2>Featured Posts</h2>
     <?php if (is_array($featuredPosts) && sizeof($featuredPosts) > 0) : ?>
 
     <div class="row">
@@ -46,7 +46,6 @@
             }
             ?>
         </div>
-    </div>
 
     <?php else : ?>
         <div class="row">

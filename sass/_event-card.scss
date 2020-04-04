@@ -14,7 +14,7 @@
         display: flex;
         flex-grow: 1;
         flex-shrink: 0;
-        padding: 1rem;
+        padding: 0.5rem;
         
         .event-card-inner {
             display: flex;
@@ -26,47 +26,70 @@
 
             .img-container {
                 position:relative;
-                height: 220px;
                 width: 100%;
                 overflow: hidden;
 
                 .card-img {
+                    position: absolute;
+                    top:  0;
+                    left: 0;
                     display: flex;
                     justify-content: center;
                     align-content: flex-end;
                     align-items: flex-end;
-                    position: relative;
                     width: 100%;
                     height: 100%;
-                    background-size: cover;
+                    background-size: cover !important;
                     background-repeat: no-repeat;
                     border-radius: 0;
                     z-index:0;
                     overflow: hidden;
                     background-position: center;
-                    transition: all 1s;
+                    transition: all 2s;
 
                     &:hover {
                         filter: hue-rotate(-20deg);
-                        transform: scale(1.05);
+                        transform: scale(1.1);
                     }
+                }
 
-                    @media screen and (max-width: 767px) {
-                        height: 320px;
-                    }
+                @media screen and (min-width: 0px) {
+                    height: 320px;
+                }
+
+                @media screen and (min-width: 768px) {
+                    height: 260px;   
+                }
+
+                @media screen and (min-width: 992px) {
+                     height: 220px;
+                }
+
+                @media screen and (min-width: 1200px) {
+                    height: 200px;
                 }
             }
 
-            h3 {
+            h2 {
+                position: absolute !important;
+                bottom: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
                 position: relative;
                 color: #fff;
                 z-index: 5;
-                background: $dark-bg;
+                background: rgba(0, 0, 0, 0.82);
                 width: 100%;
                 text-align: center;
-                font-size: 1.3rem;
-                padding: 0.6rem 0 0.65rem 0;
+                font-size: 0.9rem;
+                padding: 0;
                 margin: 0;
+
+                span {
+                    padding: 1rem 0.25rem;
+                }
             }
 
             h4 {
@@ -74,6 +97,8 @@
                 margin: 0.25rem auto;
                 padding-bottom:0.9rem;
                 margin-top: 1rem;
+                text-align: center;
+                font-size: 1.4rem;
 
                 &:after {
                     content: '';
@@ -89,14 +114,14 @@
 
             p {
                 height: 130px;
-                padding: 0.5rem 1rem 1.8rem 1rem;
+                padding: 0.5rem;
                 color: $gray-600;
             }
 
             .sign-up {
                 padding: 0.8rem;
-                margin: 1.5rem 3rem;
-                font-size: 1rem;
+                margin: 1rem 3rem;
+                font-size: 0.9rem;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
                 border: none;
                 background-image: $button-bg;

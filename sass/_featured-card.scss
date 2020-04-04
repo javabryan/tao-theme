@@ -1,0 +1,45 @@
+.featured-card {
+    margin: 1rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    
+    .col-lg-3 {
+        padding:0 !important;
+    }
+    
+    a,
+    a h3 {
+        padding: 0 0 0.25rem 0;
+        background-color: #ca2b2b;
+        background-image: linear-gradient(35deg, #404244, #1100ff);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+
+        &:hover {
+            background-image: linear-gradient(35deg, #ffa600, #ff0000);
+        }
+    }
+
+    .card-image {
+        position:relative;
+        height:100%;
+        width: 100%;
+        min-height: 180px;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: center center !important;
+        overflow: hidden;
+    }
+
+    .card-content {
+        padding: 0.5rem;
+    }
+
+    .card-meta {
+        display: block;
+        padding-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+}

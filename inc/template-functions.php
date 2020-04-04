@@ -64,6 +64,8 @@ function tao_get_featured_posts( $numPosts = 5 ) {
 			$query->the_post();
 			$post                = new stdClass();
 			$post->post_title    = get_the_title();
+			$post->featured_image = get_the_post_thumbnail_url();
+			$post->post_excerpt  = get_the_excerpt();
 			$post->author        = get_the_author();
 			$post->url           = get_permalink();
 			$post->post_date     = get_the_date();

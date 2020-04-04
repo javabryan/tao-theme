@@ -30,10 +30,15 @@ $firstChar = substr($hour, 0, 1);
 if(!is_int($firstChar)) {
     $hour = substr($hour, 1);
 }
+
+$featured = get_template_directory_uri() . '/inc/img/fallback.jpg';
+    if ( has_post_thumbnail() ) {
+        $featured = tao_get_featured_image(); 
+    }
 ?>
 
 <div id="tribe-events-content" class="tribe-events-single">
-	<header class="tao-event-hero parallax pt-4" style='background:url("<?php echo $featured ?>")'>  
+	<header class="tao-event-hero parallax pt-4" style='background:url("<?php echo esc_url($featured) ?>")'>  
 		<div class="tao-event-title">
 			<h1><?php echo the_title(); ?></h1>
 			<div class="single-event-time"><?php echo date('l m/d', strtotime($date));?> - <?php echo $hour ?></div>

@@ -113,7 +113,6 @@ function tao_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'tao_scripts' );
 
-
 /**
  * Implement the Custom Header feature.
  */
@@ -150,3 +149,22 @@ add_action( 'after_setup_theme', 'register_navwalker' );
 register_nav_menus( array(
     'primary' => __( 'Primary Menu', 'tao' ),
 ) );
+
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function tao_custom_excerpt_length( $length ) {
+    return 50;
+}
+add_filter( 'excerpt_length', 'tao_custom_excerpt_length', 999 );
+
+/**
+ * Change the excerpt more string
+ */
+function tao_excerpt_more( $more ) {
+	return '&hellip;';
+}
+add_filter( 'excerpt_more', 'tao_excerpt_more', 999 );
