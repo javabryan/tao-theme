@@ -21,6 +21,7 @@ get_header();
 <section>
     <?php 
         get_template_part( 'template-parts/front-page', 'events' );
+        get_template_part( 'template-parts/featured', 'articles');
     ?>
 </section>
 </main>

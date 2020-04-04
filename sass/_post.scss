@@ -1,0 +1,27 @@
+.wp-block-cover p:not(.has-text-color) {
+    color: #fff;
+}
+
+.navigation.post-navigation {
+    background: transparent;
+    margin: auto;
+
+    a {
+        color: $link;
+    }
+
+    a:hover,
+    a:focus {
+        color:$link-hover;
+    }
+
+    a:visited {
+        color: $link-visited;
+    }
+
+    .nav-previous,
+    .nav-next {
+            padding: 2rem;
+            border-left: 1px solid gray;
+    }
+}

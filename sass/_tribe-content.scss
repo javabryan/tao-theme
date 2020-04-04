@@ -147,8 +147,10 @@
 }
 
 .tribe-events-calendar-list__event {
-    padding: 1rem !important;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    @media screen and (min-width:992px) {
+        padding: 1rem !important;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
 }
 
 .datepicker-days {
@@ -159,5 +161,15 @@
         &:focus {
             background: $button-hover !important;
         }
+    }
+}
+
+.tribe-events-c-ical__link {
+    background: $button-bg !important;
+    color: #fbfbfb !important;
+
+    &:hover,
+    &:focus {
+        background: $button-hover !important;
     }
 }

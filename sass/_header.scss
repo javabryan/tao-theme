@@ -30,6 +30,13 @@ nav {
     justify-content: flex-end;
 }
 
-.navbar-toggler {
-    
+.site-branding {
+    display: flex;
+
+    .custom-logo-link img {
+        height: 30px;
+        width: 30px;
+        margin-right: 0.5rem;
+        border-radius: 2.5px;
+    }
 }

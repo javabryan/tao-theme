@@ -11,8 +11,14 @@ $events = tribe_get_events( [ 'posts_per_page' => 5 ] );
     </div>
     <div class="row upcoming-events">
 <?php
+
+$now = new DateTime();
+
 foreach ( $events as $post ) : 
     $date = $post->event_date;
+    $check_date = new DateTime($date);
+
+    if ($check_date > $now) :
     $hour = date('h:ia', strtotime($date));
 
     $firstChar = substr($hour, 0, 1);
@@ -33,5 +39,8 @@ foreach ( $events as $post ) :
                 </div>
             </div>
 
-        <?php endforeach; ?>
+        <?php 
+    endif;
+    endforeach; 
+    ?>
     </div>
