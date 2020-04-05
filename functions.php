@@ -98,7 +98,7 @@ add_action( 'widgets_init', 'tao_widgets_init' );
  * Enqueue scripts and styles.
  */
 function tao_scripts() {
-	wp_register_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Spicy+Rice&display=swap');
+	wp_register_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Spicy+Rice&display=swap');
 	wp_enqueue_style( 'tao-style', get_stylesheet_uri(), array('googlefonts') );
 
 	wp_enqueue_script( 'tao-script', get_template_directory_uri() . '/index.js', array( "jquery" ), '20151215', true );

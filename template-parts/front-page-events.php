@@ -39,7 +39,7 @@ foreach ( $events as $post ) :
                 <div class="event-card-inner d-flex align-items-stretch">
                     <a class="img-container" href="<?php echo esc_url($post->guid); ?>">
                         <div aria-hidden="true" class="card-img" style='background:url("<?php echo esc_url($thumbnail_url); ?>")'></div>
-                        <h2><span><?php echo $post->post_title ?><span></h2>
+                        <h3><span><?php echo $post->post_title ?><span></h3>
                     </a>
                     <h4><?php echo date('l m/d', strtotime($date));?> <br><small><?php echo $hour ?></small></h4>
                     <p>

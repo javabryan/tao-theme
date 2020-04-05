@@ -1,20 +1,26 @@
-* {
-    font-family: 'Bellota Text', cursive;
+/*
+font-family: 'Spicy Rice', cursive;
+font-family: 'Comic Neue', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 h1,
-h1 a,
-.site-title,
-.site-title a,
-.tao-site-title,
-.tao-site-title a,
-.tao-description {
+h2,
+.tao-description,
+.site-title {
     font-family: 'Spicy Rice', cursive;
-    letter-spacing: 2px;
 }
 
-h2,
-h3,
-h4 {
-    font-family: 'Lilita One', cursive;
+h3 {
+    font-family: 'Comic Neue', cursive;
+}
+
+.nav-item {
+    font-family: 'Comic Neue', cursive;
+    font-weight: 700;
 }

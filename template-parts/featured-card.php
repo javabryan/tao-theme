@@ -5,8 +5,8 @@ $featuredPost = get_query_var('featuredPost');
 if ($featuredPost) :
 
 $featured_image = get_template_directory_uri() . '/inc/img/fallback.jpg';
-    if ($featuredPost->$featured_image) {
-        $featured_image = $featuredPost->$featured_image;
+    if ($featuredPost->featured_image) {
+        $featured_image = $featuredPost->featured_image;
     }
 ?>
 

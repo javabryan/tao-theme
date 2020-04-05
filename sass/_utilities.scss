@@ -8,20 +8,25 @@ body {
 }
 
 .parallax {  
-    height: 100% !important; 
-    background-attachment: fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    margin-left:-410px !important;
-    margin-right:-410px !important;
+
+    @media screen and (min-width: 1200px) {
+            height: 100% !important; 
+            background-attachment: fixed !important;
+            margin-left:-410px !important;
+            margin-right:-410px !important;
+        }
     }
      
 .parallax-content { 
-    width:100% !important;
-    margin:0 auto !important;
-    color:#FFF !important;
-    padding-top:50px !important; 
+    @media screen and (min-width: 1200px) {
+        width:100% !important;
+        margin:0 auto !important;
+        color:#FFF !important;
+        padding-top:50px !important; 
+    }
 } 
 
 .navbar .site-title,
@@ -57,4 +62,38 @@ footer h4 {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+}
+
+
+
+
+
+/*
+Debugged
+*/
+
+.tao-front-section {
+	max-width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	margin:0 !important;
+	word-wrap: break-word;
+}
+
+.upcoming-events {
+	justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+	.tao-description {
+		font-size: 2.5rem !important;
+	}
+}
+
+.home .page-template-default .page .page-id-6 .logged-in .wp-custom-logo .tribe-js .page-template-home-customer-www-taoofodin-bryhub-com-public_html-wp-content-themes-tao-page-php {
+	margin: 0 !important;
+}
+
+.page {
+	margin-bottom: 0 !important;
 }

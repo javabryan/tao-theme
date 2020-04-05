@@ -14,7 +14,7 @@ get_header();
         <span class="tao-description">
             <?php echo get_bloginfo('description'); ?>
             <span class="discord-button"><br>
-                <a href="taoofodin.com">Join Discord</a>
+                <a href="https://discordapp.com/invite/NS3WAQS">Join Discord</a>
             </span>
         </span>
 </section>

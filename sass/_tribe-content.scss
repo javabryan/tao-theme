@@ -25,29 +25,12 @@
             padding: 0.5rem;
             height: auto;
             width: auto;
-            color: #f7f7f7;
-            background: $button-bg;
             box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
             transition: all 0.5s;
 
             span {
                 padding: 0.5rem;
             }
-        }
-
-        a:hover,
-        a:focus {
-            background: $button-hover;
-            color: #fff;
-        }
-    }
-
-    .tribe-events-button {
-        background: $button-bg !important;
-
-        &:hover,
-        &:focus {
-            background: $button-hover !important;
         }
     }
 
@@ -65,7 +48,7 @@
     .tribe-events-nav-next {
         text-align: left;
         width: auto !important;
-        border-left: 1px solid #333;
+        border-left: 3px double #555;
 
         a {
             background: transparent;
@@ -91,7 +74,7 @@
 
     .tribe-events-nav-next {
         text-align: right;
-        border-right: 1px solid #333;
+        border-right: 3px double #333;
         border-left: none;
     }
 
@@ -120,17 +103,6 @@
     }
 }
 
-.post-type-archive {
-    .tribe-common-c-btn {
-        background: $button-bg !important;
-
-        &:hover,
-        &:focus {
-            background: $button-hover !important;
-        }
-    }
-}
-
 .tribe-events-c-top-bar__nav,
 .tribe-events-c-nav,
 .tribe-events-c-nav__prev,
@@ -150,26 +122,5 @@
     @media screen and (min-width:992px) {
         padding: 1rem !important;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    }
-}
-
-.datepicker-days {
-    td.active {
-        background: $button-bg !important;
-
-        &:hover,
-        &:focus {
-            background: $button-hover !important;
-        }
-    }
-}
-
-.tribe-events-c-ical__link {
-    background: $button-bg !important;
-    color: #fbfbfb !important;
-
-    &:hover,
-    &:focus {
-        background: $button-hover !important;
     }
 }
