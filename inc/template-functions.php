@@ -154,7 +154,7 @@ function tao_formatted_date($event_date) {
     $hour = date('h:ia', strtotime($event_date));
 
     $firstChar = substr($hour, 0, 1);
-    if(!is_int($firstChar)) {
+    if(!is_int($firstChar) && $firstChar == 0) {
         $hour = substr($hour, 1);
 	}
 	

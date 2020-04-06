@@ -27,7 +27,7 @@ $date = $event->EventStartDate;
 $hour = date('h:ia', strtotime($date));
 
 $firstChar = substr($hour, 0, 1);
-if(!is_int($firstChar)) {
+if(!is_int($firstChar) && $firstChar == 0) {
     $hour = substr($hour, 1);
 }
 
