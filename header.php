@@ -42,7 +42,7 @@
 					endif;
 					if ( $tao_description || is_customize_preview() ) :
 						?>
-						<p class="site-description"><?php echo $tao_description; /* WPCS: xss ok. */ ?></p>
+						<p class="site-description"><?php echo esc_html($tao_description); /* WPCS: xss ok. */ ?></p>
 					<?php endif; ?>
 				</div><!-- .site-branding -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse"

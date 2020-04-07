@@ -97,3 +97,72 @@ Debugged
 .page {
 	margin-bottom: 0 !important;
 }
+
+h3 span {
+    font-family: 'Spicy Rice', cursive;
+font-size: 1.4rem;
+letter-spacing: 1.2px;
+}
+
+h4 {
+font-weight: 400;
+font-family: 'Comic Neue', cursive;
+}
+
+.site-footer h4 {
+    font-family: 'Spicy Rice', cursive;
+}
+
+.navbar-nav li {
+font-family: 'Comic Neue', cursive;
+font-weight: 700
+}
+
+@media screen and (max-width: 570px) {
+.tao-event-hero {
+    margin-right: -15px;
+    margin-left: -15px
+}
+}
+
+@media screen and (max-width: 768px) {
+.tao-event-hero {
+    margin-right: -121px;
+    margin-left: -121px
+}
+}
+
+@media screen and (max-width: 992px) {
+.tao-event-hero {
+    margin-right: -143px;
+    margin-left: -143px
+}
+}
+
+@media screen and (max-width: 1200px) {
+.tao-event-hero {
+    margin-right: -127px;
+    margin-left: -127px
+}
+}
+
+.nav-item {
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+}
+
+@media screen and (max-width:768px) {
+.featured-card-title h3,
+.nf-form-title h3 {
+    font-family: arial;
+}
+
+    .navbar-nav li {
+    font-family: sans-serif;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-weight: 700;
+}
+}

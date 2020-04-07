@@ -20,24 +20,24 @@ if(!is_int($firstChar) && $firstChar == 0) {
 ?>
 
 <main>
-    <section class="tao-event-hero parallax pt-4" style='background:url("<?php echo $featured ?>")'>  
+    <section class="tao-event-hero parallax pt-4" style='background:url("<?php echo esc_url($featured) ?>")'>  
         <div class="tao-event-title">
-            <h1><?php echo single_post_title(); ?></h1>
-            <div class="single-event-time"><?php echo date('l m/d', strtotime($date));?> - <?php echo $hour ?></div>
+            <h1><?php echo esc_html(single_post_title()); ?></h1>
+            <div class="single-event-time"><?php echo esc_html(date('l m/d', strtotime($date));?> - <?php echo esc_html($hour) ?>)</div>
         </div>
     </section>
     <section class="container">
         <div class="row pb-4">
             <div class="col-12 event-col">
                 <?php
-                    echo $event->post_content;
-                    the_content();
+                    echo esc_html($event->post_content);
+                    esc_html(the_content());
                 ?>
             </div>
         </div>
         <div class="row pb-4">
             <div class="col-12">
-                <?php echo $event_form ?>
+                <?php echo esc_html($event_form) ?>
             </div>
         </div>
     </section>

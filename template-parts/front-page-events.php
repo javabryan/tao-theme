@@ -39,13 +39,13 @@ foreach ( $events as $post ) :
                 <div class="event-card-inner d-flex align-items-stretch">
                     <a class="img-container" href="<?php echo esc_url($post->guid); ?>">
                         <div aria-hidden="true" class="card-img" style='background:url("<?php echo esc_url($thumbnail_url); ?>")'></div>
-                        <h3><span><?php echo $post->post_title ?><span></h3>
+                        <h3><span><?php echo esc_html($post->post_title) ?><span></h3>
                     </a>
-                    <h4><?php echo date('l m/d', strtotime($date));?> <br><small><?php echo $hour ?></small></h4>
+                    <h4><?php echo esc_html(date('l m/d', strtotime($date));?> <br><small><?php echo esc_html($hour)); ?></small></h4>
                     <p>
-                        <?php echo wp_trim_words($post->post_excerpt, 22); ?>
+                        <?php echo esc_html(wp_trim_words($post->post_excerpt, 22)); ?>
                     </p>
-                    <a class="sign-up" href="<?php echo $post->guid; ?>">Sign Up</a>
+                    <a class="sign-up" href="<?php echo esc_url($post->guid); ?>">Sign Up</a>
                 </div>
             </div>
         <?php else : ?>
