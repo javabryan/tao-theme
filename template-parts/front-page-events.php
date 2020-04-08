@@ -41,7 +41,7 @@ foreach ( $events as $post ) :
                         <div aria-hidden="true" class="card-img" style='background:url("<?php echo esc_url($thumbnail_url); ?>")'></div>
                         <h3><span><?php echo esc_html($post->post_title) ?><span></h3>
                     </a>
-                    <h4><?php echo esc_html(date('l m/d', strtotime($date));?> <br><small><?php echo esc_html($hour)); ?></small></h4>
+                    <h4><?php echo esc_html(date('l m/d', strtotime($date)));?> <br><small><?php echo esc_html($hour); ?></small></h4>
                     <p>
                         <?php echo esc_html(wp_trim_words($post->post_excerpt, 22)); ?>
                     </p>

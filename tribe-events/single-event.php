@@ -41,7 +41,7 @@ $featured = get_template_directory_uri() . '/inc/img/fallback.jpg';
 	<header class="tao-event-hero parallax pt-4" style='background:url("<?php echo esc_url($featured) ?>")'>  
 		<div class="tao-event-title">
 			<h1><?php echo esc_html(the_title()); ?></h1>
-			<div class="single-event-time"><?php echo esc_html(date('l m/d', strtotime($date));?> - <?php echo esc_html($hour)); ?></div>
+			<div class="single-event-time"><?php echo esc_html(date('l m/d', strtotime($date)));?> - <?php echo esc_html($hour); ?></div>
 		</div>
 	</header>
 
@@ -83,7 +83,7 @@ $featured = get_template_directory_uri() . '/inc/img/fallback.jpg';
 			<?php if ( get_post_type() == Tribe__Events__Main::POSTTYPE && tribe_get_option( 'showComments', false ) ) comments_template() ?>
 			<div class="row pb-4">
             <div class="col-12">
-                <?php echo esc_html($event_form) ?>
+                <?php echo $event_form ?>
             </div>
         </div>
 		<?php endwhile; ?>
